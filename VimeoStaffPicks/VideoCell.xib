@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="VideoCell" customModule="VimeoStaffPicks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="1" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f7n-7x-iEh">
+                        <rect key="frame" x="0.0" y="0.5" width="320" height="97.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqJ-Qj-PdI">
+                        <rect key="frame" x="10" y="67" width="42" height="20.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF3-dd-pdm">
+                        <rect key="frame" x="268" y="67" width="42" height="20.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f7n-7x-iEh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7pj-2y-TAS"/>
+                    <constraint firstAttribute="bottom" secondItem="UqJ-Qj-PdI" secondAttribute="bottom" constant="10" id="Cfu-Vm-K7i"/>
+                    <constraint firstItem="UqJ-Qj-PdI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ofc-kG-cOa"/>
+                    <constraint firstAttribute="bottom" secondItem="YF3-dd-pdm" secondAttribute="bottom" constant="10" id="UoD-KD-3bz"/>
+                    <constraint firstItem="YF3-dd-pdm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UqJ-Qj-PdI" secondAttribute="trailing" constant="10" id="X5m-Nn-4Jf"/>
+                    <constraint firstItem="f7n-7x-iEh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Xhv-8h-NDC"/>
+                    <constraint firstAttribute="trailing" secondItem="f7n-7x-iEh" secondAttribute="trailing" id="ase-aN-wDj"/>
+                    <constraint firstItem="f7n-7x-iEh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fIl-l2-BP0"/>
+                    <constraint firstAttribute="trailing" secondItem="YF3-dd-pdm" secondAttribute="trailing" constant="10" id="gVC-Dp-gPu"/>
+                    <constraint firstItem="f7n-7x-iEh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hkb-Yn-foR"/>
+                    <constraint firstAttribute="bottom" secondItem="f7n-7x-iEh" secondAttribute="bottom" id="sMC-qT-Pj7"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Xhv-8h-NDC"/>
+                        <exclude reference="fIl-l2-BP0"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="durationLabel" destination="YF3-dd-pdm" id="8Oq-ob-f8A"/>
+                <outlet property="nameLabel" destination="UqJ-Qj-PdI" id="k9H-I0-SQx"/>
+                <outlet property="videoImageView" destination="f7n-7x-iEh" id="abJ-4n-lzx"/>
+            </connections>
+            <point key="canvasLocation" x="387" y="299"/>
+        </tableViewCell>
+    </objects>
+</document>
