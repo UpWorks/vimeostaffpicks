@@ -18,7 +18,7 @@ class VimeoClient {
     
     static let staffPicksPath = "/channels/staffpicks/videos"
     
-    static let authToken = "ea3e952e1d3e34e5ebcb713173997fa8"
+    static let authToken = "GET_AN_API_TOKEN"
     
     class func staffpicks(callback: ServerResponseCallback) {
         
